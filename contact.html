@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="contact.css">
+    <title>Contact Us Page</title>
+</head>
+<body>
+    <section class="contact-us">
+        <header>
+            <h1 class="logo">Travel</h1>
+            <div class="toggle"></div>
+        </header>
+        <div class="contact">
+            <h2> <i class="fa-solid fa-address-book"></i> Contact Us Page </h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam repellat cupiditate ipsam debitis excepturi earum rem adipisci culpa labore, impedit iste nostrum modi, omnis molestiae dolore soluta quae sint alias! Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste repellat, sit obcaecati ut modi animi suscipit repudiandae cum praesentium ipsa inventore maxime molestiae, omnis hic, deleniti dolor id porro nostrum.</p>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+            <section class="contact-info">
+                <div>
+                    <i class="fa-solid fa-phone"></i>
+                    <h3> PHONE (LANDLINE) </h3>
+                    <p>#234-1234 
+                    <br>
+                    #567-5678
+                    </p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-location-dot"></i>
+                    <h3>LOCATION</h3>
+                    <p>649 R. Hidalgo Street, Barangay 307 Quiapo, City of Manila, Metro Manila 1001</p>
+                </div>
+            </section>
+    </section>
+
+    <script>
+        const menuToggle = document.querySelector('.toggle')
+        const menu = document.querySelector('.menu')
+
+        menuToggle.addEventListener('click', () => {
+            document.querySelector('.contact-us').classList.toggle('active')
+            menuToggle.classList.toggle('active')
+            menu.classList.toggle('active')
+        } )
+    </script>
+</body>
+</html>

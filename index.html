@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Travel Landing Page</title>
+</head>
+<body>
+    <section class="showcase ">
+        <header>
+            <h1 class="logo">Travel</h1>
+            <div class="toggle"></div>
+        </header>
+
+        <video src="phil.mp4" loop autoplay></video>
+
+        <div class="overlay"></div>
+
+        <div class="text">
+            <h3>It's more fun in the</h3>
+            <h2>PHILIPPINES!!</h2>
+            <p>“Travel is fatal to prejudice, bigotry, and narrow-mindedness, and many of our people need it sorely on these accounts. Broad, wholesome, charitable views of men and things cannot be acquired by vegetating in one little corner of the earth all one’s lifetime.” – Mark Twain</p>
+            <a href="http://127.0.0.1:5500/explore.html" target="_blank">Explore</a>
+        </div>
+
+        <ul class="social">
+            <li><a href="https://www.facebook.com/profile.php?id=100010655202291"><img src="facebook.png"></a></li>
+            <li><a href="https://www.instagram.com/msvl_chll/?hl=en"><img src="instagram.png"></a></li>
+            <li><a href="https://twitter.com/RAC_calumpiano"><img src="twitter.png"></a></li>
+        </ul>
+    </section>
+    <div class="menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+
+    <script>
+        const menuToggle = document.querySelector('.toggle')
+        const showcase = document.querySelector('.showcase')
+
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active')
+            showcase.classList.toggle('active')
+        } )
+    </script>
+
+</body>
+</html>

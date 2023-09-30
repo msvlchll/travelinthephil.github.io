@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,200;0,400;0,500;0,600;1,200;1,400;1,500&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Fira Sans Condensed', sans-serif;
+}
+body {
+    background-attachment: fixed;
+    background-image: url('BG.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+.show {
+    height: 100vh;
+    transition: 300ms ease;
+}
+.show.active {
+    translate: -180px 0;
+}
+
+header{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.show header h1:hover {
+    color: darkmagenta;
+    letter-spacing: 3px;
+    transition: ease-in-out;
+}
+
+.logo {
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.toggle {
+    position: relative;
+    z-index: 100;
+    width: 60px;
+    height: 60px;
+    background: url('menu.png');
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-position: center;
+    cursor: pointer;
+}
+.toggle.active {
+    background: url('close.png');
+    background-repeat: no-repeat;
+    background-size: 25px;
+    background-position: center;
+}
+main {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    width: 80%;
+    margin: auto;
+    align-items: center;
+}
+.phil video {
+    width: 100%;
+}
+
+.phil p {
+    padding: 15px;
+    font-size: 16px;
+    margin: 0.5px 0;
+    font-weight: 400;
+    max-width: 700px;
+    text-align: center;
+    display: flex;
+    font: bold;
+}
+
+.menu {
+    background: url('th.jpg');
+    background-size: cover;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 180px;
+    height: 100%;
+    translate: 100% 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 300ms ease;
+}
+
+.menu ul {
+    position: relative;
+    list-style: none;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    font-weight: 300px;
+    font-size: 24px;
+    color: #111;
+}
+
+.menu ul li a:hover {
+    color: #4d76b4f1;
+    text-decoration: underline;
+}
+
+.menu.active {
+    translate: 0 0;
+}
+
+@media only screen and (max-width: 800px) {
+    .text h1 {
+        font-size: 2em;
+    }
+
+    .text h2 {
+        font-size: 1em;
+    }
+    main {
+        position: static;
+        translate: 0 0;
+        grid-template-columns: 1fr ;
+    }
+    main figure {
+        position: sticky;
+        top: 7rem;
+    }
+    header h1 {
+        order: 3;
+        flex-basis: 100%;
+        text-align: center;
+        position: sticky;
+    }
+    header {
+        position: sticky;
+        top: 0;
+    }
+}
+
+.show-more {
+    position: fixed;
+    z-index: 100;
+    bottom: 1rem;
+    font-size: 25px;
+    left: 40%;
+    background-color: azure;
+    padding: 5px 5px;
+}
+
+.show-more a{
+    color: black;
+}
+

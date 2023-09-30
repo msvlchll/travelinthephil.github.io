@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="explore.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>Explore</title>
+</head>
+<body>
+    <div class="menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+<div class="show">
+    <header>
+        <h2 class="logo">Travel</h2>
+        <h1>EXPLORING THE BEAUTY OF THE PHILLIPINES</h1>
+        <div class="toggle"></div>
+    </header>
+    <main class="phil">
+        <figure>
+            <video controls src="phill.mp4" type="video/mp4"></video>
+            </figure>
+        <section>
+            <p> The Philippines (Filipino: Pilipinas) officially the Republic of the Philippines (Filipino: Republika ng Pilipinas), is an archipelagic country in Southeast Asia. In the western Pacific Ocean, it consists of 7,641 islands which are broadly categorized in three main geographical divisions from north to south: Luzon, Visayas, and Mindanao. The Philippines is bounded by the South China Sea to the west, the Philippine Sea to the east, and the Celebes Sea to the south. 
+                <br>
+                <br>
+                It shares maritime borders with Taiwan to the north, Japan to the northeast, Palau to the east and southeast, Indonesia to the south, Malaysia to the southwest, Vietnam to the west, and China to the northwest. It is the world's twelfth-most-populous country, with diverse ethnicities and cultures. Manila is the country's capital, and its most populated city is Quezon City; both are within Metro Manila.</p>
+        </section>
+    </main>
+</div>
+    <script>
+        const menuToggle = document.querySelector('.toggle')
+        const menu = document.querySelector('.menu')
+
+        menuToggle.addEventListener('click', () => {
+            document.querySelector('.show').classList.toggle('active')
+            menuToggle.classList.toggle('active')
+            menu.classList.toggle('active')
+        } )
+    </script>
+<div class="show-more">
+    <a href="explore2.html"> Show More...   <i class="fa-solid fa-right-to-bracket"></i> </a>
+</div>
+
+     
+</body>
+</html>
